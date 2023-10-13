@@ -1,23 +1,22 @@
-#include "holberton.h"
+#include "main.h"
 
+/**
+ * print_most_numbers - Prints the numbers from 0 to 9 (excluding 2 and 4) followed by a new line.
+ */
 void print_most_numbers(void)
 {
-    char c;
+    int digit;
 
-    for (c = '0'; c <= '9'; c++)
+    for (digit = 0; digit <= 9; digit++)
     {
-        if (c != '2' && c != '4')
+        if (digit != 2 && digit != 4) /* Skip printing 2 and 4 */
+
         {
-            _putchar(c);  // Assuming _putchar is used for character output
+            _putchar(digit + '0');
         }
     }
 
     _putchar('\n');
 }
 
-int main(void)
-{
-    print_most_numbers();
-    return (0);
-}
 
